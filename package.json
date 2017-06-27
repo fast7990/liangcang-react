@@ -91,12 +91,13 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy":{
+  "proxy": {
     "/j": {
       "target": "https://read.douban.com/j",
       "changeOrigin": true,
-      "pathRewrite": { "^/j" : "" }
+      "pathRewrite": {
+        "^/j": ""
+      }
     }
-
   }
 }

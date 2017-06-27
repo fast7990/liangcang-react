@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Button,Icon,NavBar} from 'antd-mobile'
-
+import Header from './components/Header'
 
 fetch("/j/category/").then(res=>res.json()).then(data=>{
     console.log(data)
@@ -9,11 +9,6 @@ fetch("/j/category/").then(res=>res.json()).then(data=>{
 
 
 ReactDOM.render(
-  <div>
-    <NavBar 
-      mode="light"     
-      iconName={null}
-    >首页</NavBar>
-  </div>
+ 	<Header/>
 , document.getElementById("root"));
 
